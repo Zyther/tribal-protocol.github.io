@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tribal Protocol -- The White Paper</title>
+    <style>
+
+body, html{
+    height: 100%;
+    min-height: 100vh;
+    margin: 0px;
+  }
+  
+  .star-wars-intro {
+    background: url("img/stars-bg.jpg") center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    font-weight: 700;
+    color: #EBD71C;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .star-wars-intro p.intro-text {
+    position: relative;
+    max-width: 16em;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 20% auto;
+    color: #4ee;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+    -webkit-animation: intro 2s ease-out;
+    -moz-animation: intro 2s ease-out;
+    -ms-animation: intro 2s ease-out;
+    -o-animation: intro 2s ease-out;
+    animation: intro 2s ease-out;
+  }
+  
+  .star-wars-intro .main-content{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: 3;
+    width: 98%;
+    height: 50em;
+    bottom: 0;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(350px) rotateX(25deg);
+  }
+  
+  .star-wars-intro .main-content:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    pointer-events: none;
+  }
+  
+  .star-wars-intro .space-button {
+    color: #EBD71C;
+    border: 12px solid #EBD71C;
+    padding: 20px;
+    background: transparent;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .star-wars-intro .space-button:hover {
+    background-color: #D2BE03;
+    border-color: #D2BE03;
+    color: black;
+  }
+  
+  .star-wars-intro .space-button:active,
+  .star-wars-intro .space-button:focus {
+    background-color: #B8A40A;
+    border-color: #B8A40A;
+    color: black;
+  }
+  
+  .star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s forwards;
+  }
+  
+  .star-wars-intro .title-content > .content-header {
+    text-align: center;
+  }
+  
+  /* Main Image Styles */
+  
+  .star-wars-intro .main-logo {
+    position: absolute;
+    width: 2.6em;
+    left: 50%;
+    top: 20vh;
+    font-size: 10em;
+    text-align: center;
+    margin-left: -1.3em;
+    line-height: 0.8em;
+    letter-spacing: -0.05em;
+    color: #000;
+    text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: logo 5s ease-out 2.5s;
+    -moz-animation: logo 5s ease-out 2.5s;
+    -ms-animation: logo 5s ease-out 2.5s;
+    -o-animation: logo 5s ease-out 2.5s;
+    animation: logo 5s ease-out 2.5s;
+  }
+  
+  .star-wars-intro .main-logo > img {
+    max-width: 100%;
+  }
+  
+  @-webkit-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-moz-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-ms-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-o-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  
+  @-webkit-keyframes logo {
+    0% { -webkit-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -webkit-transform: scale(0.1); opacity: 0; }
+  }
+  
+  @-moz-keyframes logo {
+    0% { -moz-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -moz-transform: scale(0.1); opacity: 0; }
+  }
+  
+  @-ms-keyframes logo {
+    0% { -ms-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -ms-transform: scale(0.1); opacity: 0; }
+  }
+  
+  @-o-keyframes logo {
+    0% { -o-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -o-transform: scale(0.1); opacity: 0; }
+  }
+  
+  @keyframes logo {
+    0% { transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: scale(0.1); opacity: 0; }
+  }
+  
+  @keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .star-wars-intro .main-content {
+      font-size: 30px;
+    }
+    .star-wars-intro .title-content {
+      position: absolute;
+      top: 100%;
+      animation: scroll 100s linear 4s forwards;
+    }
+  }
+    </style>
+    <style>
+        .star-wars-intro {
+           background: url("stars-bg.jpg") center center;
+            background-color: rgba(0, 0, 0, 0);
+            background-size: auto;
+            background-size: cover;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.getElementById("theBody").onclick = function(ev) {
+                ev.preventDefault();
+                window.open("https://google.com", "_blank");
+
+            }
+        }
+    </script>
+</head>
+<body id="theBody">
+    <div class="star-wars-intro">
+
+        <!-- Blue Intro Text -->
+        <p class="intro-text">
+            <b>CLICK ANYWHERE TO VIEW THE FULL WHITEPAPER</b>
+        </p>
+      
+        <!-- Logo Image or Text goes in here -->
+        <h2 class="main-logo">
+          <img src="tribal_sw.png">
+        </h2>
+      
+        <!-- All Scrolling Content Goes in here -->
+        <div class="main-content">
+      
+          <div class="title-content">
+            <p class="content-header">The Tribal Protocol:<br />A New Hope</p>
+      
+            <br>
+      
+            <p class="content-body">
+                It's all about ownership<br /><br />
+                We believe the users — real people — Should own and monetize the social networks they belong to and power. There needs to be a “people focus” on what web3 should be. We believe in designing <b>first</b> for non-technical <b>everyday users</b>, and hope to leave the focus on crypto and blockchain as non-blocking technical details. 
+                <br /><br />
+                Over the past 5 years there have been dozens of credible attempts at “decentralizing social”, but they have all been found wanting. At Tribal Protocol we are done waiting for someone else to solve this. We’re creating a layer 1 blockchain built for people to “Tribe” online, and we hope you’ll crack a laptop and join the fun.                <br /><br />
+                <br /><br />
+                What is Tribal Protocol?
+                <br /><br />
+                “Tribes form so naturally it’s as though our tribe is part of our genetic code. Tribes helped humans survive the last ice age, build farming communities, and, later, cities. **Birds flock, fish school, people ‘tribe’”**
+                <br />
+                <a target="_blank" href="https://triballeadership.net">-- Tribal Leadership</a>
+                <br /><br />
+                We are moving past the age of monolithic social networks, and moving towards a multitude of niche social networks* where content and users flow freely.
+                <br />
+                The Tribal Protocol is a layer 1 blockchain designed for people to “tribe” online. Our primary mission is to allow anyone to become the co-founder of their own social networks, and in turn collectively change how people organize and socialize online.
+                <br />
+                Communities have been built online for over 20 years and the social feature innovation has been amazing to watch: feeds, groups, reels, lives, threads, clubhouses, likes, follows, and pokes. While many might think that the design space for social media is tapped out, we think that just around the corner is a place where all these innovative features can be tapped into in a new category of social: niche, co-owned experiences tailored by and for specific communities and purposes.
+                <br />
+                We believe: When given the opportunity to own these communities, people will organize, manage, and scale social networks, aka ”tribes” of their own. What’s missing is the backend and no-code tools to make this a reality......
+            </p>
+      
+            <!-- button or link or whatever -->
+            <a target="_blank" href="paper.pdf" class="space-button">View the FULL white paper now!</a>
+            
+          </div>
+        </div>
+      </div>
+</body>
+</html>
