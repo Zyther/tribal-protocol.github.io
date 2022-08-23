@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":[["DebugInfo","Recorder for relevant interactions with this crate."],["EmittedEvent","Record for an emitted event."],["RecordedDebugMessages",""]]};

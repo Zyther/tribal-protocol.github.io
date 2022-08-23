@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"struct":[["Signature","Represents a Schnorr signature."]]};

@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":[["AccountError","Errors encountered upon interacting with accounts."],["Error","Errors which can happen when interacting with this crate."]],"mod":[["ext","Provides the same interface as Substrate’s FRAME `contract` module."],["test_api",""]],"trait":[["ChainExtension","Types implementing this trait can be used as chain extensions."]]};

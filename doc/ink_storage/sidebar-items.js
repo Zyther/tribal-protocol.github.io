@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"mod":[["traits","Traits and interfaces to operate with storage entities."]],"struct":[["Mapping","A mapping of key-value pairs directly into contract storage."]]};

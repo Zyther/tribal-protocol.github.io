@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":[["Error","Every error that can be returned to a contract when it calls any of the host functions."]],"struct":[["ChainSpec","The chain specification."],["Engine","The off-chain engine."],["ReturnCode","The raw return code returned by the host side."]]};

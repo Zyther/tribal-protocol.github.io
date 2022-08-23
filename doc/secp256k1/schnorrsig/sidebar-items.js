@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"type":[["KeyPair","backwards compatible re-export of keypair"],["PublicKey","backwards compatible re-export of xonly key"],["Signature","backwards compatible re-export of schnorr signatures"]]};
