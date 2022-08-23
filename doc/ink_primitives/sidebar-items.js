@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Key","A key into the smart contract storage."],["KeyPtr","A key pointer."]]};
